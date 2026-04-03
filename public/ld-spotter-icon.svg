@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <symbol id="rd-icon-spotter" viewBox="0 0 24 24">
+      <!-- Background circle with subtle fill -->
+      <circle cx="12" cy="12" r="11" fill="currentColor" opacity="0.08" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
+      <!-- Stylized paragraph symbol (section sign) - classic legal icon -->
+      <path d="M9.5 5.5 C9.5 5.5 14.5 5.5 14.5 8 C14.5 10.5 9.5 10.5 9.5 10.5" 
+            fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M14.5 13.5 C14.5 13.5 9.5 13.5 9.5 16 C9.5 18.5 14.5 18.5 14.5 18.5" 
+            fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <line x1="12" y1="4" x2="12" y2="20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    </symbol>
+  </defs>
+</svg>
