@@ -5,22 +5,22 @@ let isInitialized = false;
 export function initThoughtSpot() {
   if (!isInitialized) {
     init({
-      thoughtSpotHost: 'https://legaldecoder.thoughtspot.cloud',
+      thoughtSpotHost: 'https://ypulse.thoughtspot.cloud',
       authType: AuthType.None,
       customizations: {
         content: {
           strings: {
-            "Spotter": "Legal AI",
-            "Ask Spotter": "Ask Legal AI",
-            "Spotter session": "Legal AI session",
-            "Ask a question": "Ask about your legal spend data",
-            "ThoughtSpot": "Legal Decoder",
+            "Spotter": "YPulse AI",
+            "Ask Spotter": "Ask YPulse AI",
+            "Spotter session": "YPulse AI session",
+            "Ask a question": "Ask about youth brand data",
+            "ThoughtSpot": "YPulse",
             "Powered by ThoughtSpot": "",
             "Preview data": "Preview data",
-            "What do you want to know?": "What would you like to analyze?",
+            "What do you want to know?": "What would you like to explore?",
           }
         },
-        iconSpriteUrl: "https://cdn.jsdelivr.net/gh/mmarco-ts/ld-icon-store/ld-spotter-icon.svg",
+        iconSpriteUrl: "/yp-icon.svg",
         style: {
           customCSS: {
             rules_UNSTABLE: {
@@ -61,7 +61,7 @@ export function initThoughtSpot() {
       },
     });
     isInitialized = true;
-    console.log('ThoughtSpot SDK initialized for Legal Decoder');
+    console.log('ThoughtSpot SDK initialized for YPulse');
   }
 }
 

@@ -42,10 +42,10 @@ export default function Dashboard() {
                   fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important"
                 },
                 ".chip-base-module__chip.chip-base-module__filter.chip-base-module__trigger.chip-base-module__default:hover": {
-                  backgroundColor: "#1B2A4A !important",
-                  borderColor: "#1B2A4A !important",
+                  backgroundColor: "#2D1B69 !important",
+                  borderColor: "#2D1B69 !important",
                   color: "#ffffff !important",
-                  boxShadow: "0 2px 8px rgba(27, 42, 74, 0.3) !important"
+                  boxShadow: "0 2px 8px rgba(45, 27, 105, 0.3) !important"
                 },
                 ".chip-base-module__chip.chip-base-module__filter.chip-base-module__trigger.chip-base-module__default:hover .chip-base-module__chipText": {
                   color: "#ffffff !important"
@@ -57,24 +57,24 @@ export default function Dashboard() {
                   color: "#ffffff !important"
                 },
                 ".chip-base-module__chip.chip-base-module__filter:hover": {
-                  backgroundColor: "#1B2A4A !important",
-                  borderColor: "#1B2A4A !important",
+                  backgroundColor: "#2D1B69 !important",
+                  borderColor: "#2D1B69 !important",
                   color: "#ffffff !important"
                 },
                 ".chip-base-module__chip.chip-base-module__filter:hover span": {
                   color: "#ffffff !important"
                 },
                 ".filter-panel-module__filterChip.chip-base-module__chip:hover": {
-                  backgroundColor: "#1B2A4A !important",
-                  borderColor: "#1B2A4A !important",
+                  backgroundColor: "#2D1B69 !important",
+                  borderColor: "#2D1B69 !important",
                   color: "#ffffff !important"
                 },
                 ".filter-panel-module__filterChip.chip-base-module__chip:hover span": {
                   color: "#ffffff !important"
                 },
                 "[data-testid='filter-panel-chip']:hover": {
-                  backgroundColor: "#1B2A4A !important",
-                  borderColor: "#1B2A4A !important",
+                  backgroundColor: "#2D1B69 !important",
+                  borderColor: "#2D1B69 !important",
                   color: "#ffffff !important"
                 },
                 "[data-testid='filter-panel-chip']:hover span": {
@@ -136,16 +136,16 @@ export default function Dashboard() {
 
   return (
     <>
-      <Header 
-        title="Compliance Dashboard" 
-        subtitle="Invoice compliance analysis and flag review"
+      <Header
+        title="Brand Dashboard"
+        subtitle="Brand performance tracking among young consumers"
       />
       <main className="main-content">
         <div className="page-container">
           <div className="page-header">
-            <h2 className="page-title">Invoice Compliance Analysis</h2>
+            <h2 className="page-title">Brand Performance Analysis</h2>
             <p className="page-subtitle">
-              Review flagged invoices, potential write-downs, and billing efficiency across law firms
+              Track brand sentiment, loyalty, and purchase data across demographics and time periods
             </p>
           </div>
           <div className="embed-container" ref={embedRef} />

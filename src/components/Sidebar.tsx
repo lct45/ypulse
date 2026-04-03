@@ -11,10 +11,10 @@ export default function Sidebar({ collapsed, onToggle }: SidebarProps) {
     <aside className={`sidebar ${collapsed ? 'collapsed' : ''}`}>
       <div className="sidebar-header">
         <div className="sidebar-logo">
-          <div className="sidebar-logo-mark">LD</div>
+          <div className="sidebar-logo-mark">YP</div>
           <div className="sidebar-logo-text">
-            <span className="sidebar-logo-title">Legal Decoder</span>
-            <span className="sidebar-logo-subtitle">Analytics Portal</span>
+            <span className="sidebar-logo-title">YPulse</span>
+            <span className="sidebar-logo-subtitle">Brand Intelligence</span>
           </div>
         </div>
         <button className="sidebar-toggle" onClick={onToggle} aria-label="Toggle sidebar">
@@ -46,7 +46,7 @@ export default function Sidebar({ collapsed, onToggle }: SidebarProps) {
             <span className="nav-item-icon">
               <LayoutDashboard size={20} />
             </span>
-            <span className="nav-item-text">Compliance Dashboard</span>
+            <span className="nav-item-text">Brand Dashboard</span>
           </NavLink>
           <NavLink 
             to="/ai-analytics" 
@@ -62,9 +62,9 @@ export default function Sidebar({ collapsed, onToggle }: SidebarProps) {
 
       <div className="sidebar-footer">
         <div className="sidebar-user">
-          <div className="sidebar-user-avatar">LD</div>
+          <div className="sidebar-user-avatar">YP</div>
           <div className="sidebar-user-info">
-            <div className="sidebar-user-name">Legal Decoder</div>
+            <div className="sidebar-user-name">YPulse</div>
             <div className="sidebar-user-role">Analytics User</div>
           </div>
         </div>

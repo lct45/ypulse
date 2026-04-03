@@ -46,16 +46,16 @@ export default function Spotter() {
 
   return (
     <>
-      <Header 
-        title="AI Analytics" 
-        subtitle="Natural language search powered by Legal AI"
+      <Header
+        title="AI Analytics"
+        subtitle="Natural language search powered by YPulse AI"
       />
       <main className="main-content">
         <div className="page-container">
           <div className="page-header">
-            <h2 className="page-title">AI-Powered Legal Insights</h2>
+            <h2 className="page-title">AI-Powered Brand Insights</h2>
             <p className="page-subtitle">
-              Ask questions in natural language about invoices, flags, law firms, and billing patterns
+              Ask questions in natural language about brands, trends, demographics, and consumer behavior
             </p>
           </div>
           <div className="embed-container" ref={embedRef}>

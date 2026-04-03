@@ -1,10 +1,10 @@
 :root {
-  /* Legal Decoder Brand Colors */
-  --ld-accent: #C5D63D;
-  --ld-accent-hover: #b3c236;
-  --ld-accent-light: #f4f7e0;
-  --ld-dark: #1B2A4A;
-  --ld-dark-deep: #0f1a2e;
+  /* YPulse Brand Colors */
+  --ld-accent: #4F46E5;
+  --ld-accent-hover: #4338CA;
+  --ld-accent-light: #EEF2FF;
+  --ld-dark: #2D1B69;
+  --ld-dark-deep: #1B0F45;
   --ld-white: #ffffff;
   --ld-gray-50: #F5F6F8;
   --ld-gray-100: #f1f5f9;
@@ -135,7 +135,7 @@ body {
   width: 36px;
   height: 36px;
   background: var(--ld-accent);
-  color: var(--ld-dark);
+  color: var(--ld-white);
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -247,8 +247,8 @@ body {
 
 .nav-item.active {
   background: var(--ld-accent);
-  color: var(--ld-dark);
-  box-shadow: 0 4px 12px rgba(197, 214, 61, 0.4);
+  color: var(--ld-white);
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.4);
 }
 
 .nav-item-icon {
@@ -288,7 +288,7 @@ body {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--ld-accent) 0%, #8fa829 100%);
+  background: linear-gradient(135deg, var(--ld-accent) 0%, #7C3AED 100%);
   color: var(--ld-dark);
   display: flex;
   align-items: center;
@@ -499,9 +499,9 @@ body {
   align-items: flex-start;
   padding: 96px 200px 96px 71px;
   min-height: 458px;
-  background: 
-    linear-gradient(to right, rgba(27, 42, 74, 0.85) 0%, rgba(27, 42, 74, 0.6) 50%, rgba(27, 42, 74, 0.4) 100%),
-    url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2070&auto=format&fit=crop');
+  background:
+    linear-gradient(to right, rgba(45, 27, 105, 0.85) 0%, rgba(45, 27, 105, 0.6) 50%, rgba(45, 27, 105, 0.4) 100%),
+    url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2070&auto=format&fit=crop');
   background-size: cover;
   background-position: center 40%;
   flex-shrink: 0;

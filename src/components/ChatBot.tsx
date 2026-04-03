@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import { MessageCircle, X, Minimize2, Send, Scale } from 'lucide-react';
+import { MessageCircle, X, Minimize2, Send, Sparkles } from 'lucide-react';
 import { useSpotterAgent, SpotterMessage } from '@thoughtspot/visual-embed-sdk/react';
 import '../lib/thoughtspot';
 
@@ -33,17 +33,17 @@ const DATA_QUESTION_KEYWORDS = [
   'how much', 'how many', 'what is the', 'what are the',
   'total', 'sum', 'average', 'avg', 'count', 'number of',
   'top', 'bottom', 'highest', 'lowest', 'best', 'worst',
-  'by firm', 'by law firm', 'by timekeeper', 'by matter',
+  'by brand', 'by demographic', 'by region', 'by category', 'by generation',
   'breakdown', 'distribution', 'trend', 'over time',
-  'invoices', 'invoice', 'billing', 'amount', 'hours',
-  'flags', 'flagged', 'compliance', 'write-down', 'writedown',
+  'brand', 'brands', 'sentiment', 'favorability', 'awareness', 'loyalty',
+  'purchase intent', 'yscore', 'trending', 'gen z', 'millennial',
   'vs', 'versus', 'compared to', 'relative to',
   'percentage', 'ratio', 'proportion', '%',
   'list', 'rank', 'sort', 'order by',
   'per', 'each', 'all', 'every',
   'quarterly', 'monthly', 'yearly', 'annual', 'weekly', 'daily',
   'performance', 'metrics', 'kpi', 'statistics',
-  'discount', 'rate', 'spend', 'cost'
+  'demographic', 'age', 'gender', 'ethnicity', 'country'
 ];
 
 const GENERAL_QUESTION_KEYWORDS = [
@@ -80,30 +80,30 @@ function generateTextResponse(question: string): string {
   const lowerQuestion = question.toLowerCase();
   
   if (lowerQuestion.match(/^(hi|hello|hey|good morning|good afternoon)/)) {
-    return "Hello! I'm your Legal Decoder Analytics assistant. I can help you explore invoice compliance data.\n\nTry asking me:\n\u2022 \"Show me total billing by law firm\"\n\u2022 \"What are the top flagged invoices?\"\n\u2022 \"Show me potential write-downs by flag type\"\n\nOr ask me to explain metrics and insights.";
+    return "Hello! I'm your YPulse Analytics assistant. I can help you explore youth brand intelligence data.\n\nTry asking me:\n\u2022 \"Show me brand favorability by generation\"\n\u2022 \"Which brands are trending with Gen Z?\"\n\u2022 \"Show purchase intent over time\"\n\nOr ask me to explain metrics and insights.";
   }
-  
+
   if (lowerQuestion.match(/(thanks|thank you)/)) {
-    return "You're welcome! Let me know if you have any other questions about your legal spend data.";
+    return "You're welcome! Let me know if you have any other questions about youth brand data.";
   }
-  
+
   if (lowerQuestion.includes('tell me about') || lowerQuestion.includes('explain') || lowerQuestion.includes('what is')) {
     if (lowerQuestion.includes('data') || lowerQuestion.includes('portal')) {
-      return "This portal provides comprehensive legal spend analytics:\n\n\u2696\uFE0F **Compliance Flagging**: 48 automated flags across 3 categories\n\uD83D\uDCCA **Invoice Analysis**: Track billing amounts, hours, and rates\n\uD83D\uDCB0 **Write-Down Analysis**: Identify potential savings\n\uD83D\uDD0D **Firm Performance**: Compare law firms and timekeepers\n\nTry asking a specific question like \"Show top flagged invoices by amount\" to see visualizations.";
+      return "This portal provides comprehensive youth brand intelligence:\n\n\uD83D\uDCCA **Brand Tracking**: Monitor 1,200+ brands among young consumers\n\uD83D\uDCCA **Sentiment Analysis**: Track favorability, loyalty, and awareness\n\uD83D\uDCCA **Purchase Intent**: Measure likelihood to buy across demographics\n\uD83D\uDD0D **Demographic Breakdown**: Segment by age, gender, ethnicity, and region\n\nTry asking a specific question like \"Show top brands by favorability\" to see visualizations.";
     }
-    if (lowerQuestion.includes('flag') || lowerQuestion.includes('compliance')) {
-      return "**Compliance Flags** are automated markers that identify potential billing issues:\n\n\u2022 **Billing Hygiene**: Vague entries, block billing, duplicate charges\n\u2022 **Workflow**: Excessive time, unnecessary tasks\n\u2022 **Staffing Efficiencies**: Wrong-level staffing, rate issues\n\nEach flag carries a discount percentage. The highest discount per line item drives the potential write-down.\n\nWant to see the data? Ask \"Show flagged amounts by flag type\".";
+    if (lowerQuestion.includes('yscore') || lowerQuestion.includes('score')) {
+      return "**YScore+** is YPulse's proprietary brand health metric:\n\n\u2022 Combines awareness, favorability, loyalty, and purchase intent\n\u2022 Benchmarked against industry peers\n\u2022 Tracked monthly across demographics\n\nA higher YScore+ indicates stronger overall brand equity among young consumers.\n\nWant to see the data? Ask \"Show YScore+ by brand\".";
     }
-    if (lowerQuestion.includes('write-down') || lowerQuestion.includes('writedown') || lowerQuestion.includes('discount')) {
-      return "**Potential Write-Down** is the key savings metric:\n\nFormula: Invoice Line Amount x Highest Discount %\n\nFor each invoice line, we take the flag with the highest discount percentage and calculate the potential reduction.\n\nThis represents how much the client could save on their legal bills.\n\nAsk \"Show potential write-downs by law firm\" to see the data.";
+    if (lowerQuestion.includes('favorab') || lowerQuestion.includes('sentiment') || lowerQuestion.includes('loyalty')) {
+      return "**Brand Health Metrics** tracked by YPulse:\n\n\u2022 **Awareness**: % who have heard of the brand\n\u2022 **Favorability**: % who consider it a favorite or better\n\u2022 **Loyalty**: % who consistently choose the brand\n\u2022 **Purchase Intent**: % somewhat or very likely to buy\n\nAll metrics are measured among young consumers aged 13–39.\n\nAsk \"Compare favorability across brands\" to explore the data.";
     }
   }
-  
+
   if (lowerQuestion.includes('help') || lowerQuestion.includes('what can you do')) {
-    return "I can help you with:\n\n\uD83D\uDCCA **Data Questions** - Ask me to show charts and comparisons:\n\u2022 \"Show me billing by law firm\"\n\u2022 \"What are the top flagged invoices?\"\n\u2022 \"Compare write-downs by flag category\"\n\n\uD83D\uDCA1 **Insights** - Ask me to explain metrics:\n\u2022 \"What is a compliance flag?\"\n\u2022 \"Explain potential write-downs\"\n\n\uD83D\uDD0D **Analysis** - Explore your legal spend data:\n\u2022 \"Which firms have the most flags?\"\n\u2022 \"Show billing trends over time\"";
+    return "I can help you with:\n\n\uD83D\uDCCA **Data Questions** - Ask me to show charts and comparisons:\n\u2022 \"Show brand favorability by generation\"\n\u2022 \"Which brands have the highest purchase intent?\"\n\u2022 \"Compare YScore+ by demographic\"\n\n\uD83D\uDCA1 **Insights** - Ask me to explain metrics:\n\u2022 \"What is YScore+?\"\n\u2022 \"Explain brand favorability\"\n\n\uD83D\uDD0D **Analysis** - Explore youth brand data:\n\u2022 \"Which brands are trending with Gen Z?\"\n\u2022 \"Show awareness trends over time\"";
   }
-  
-  return "I can help answer questions about your legal spend data.\n\nFor **data visualizations**, try:\n\u2022 \"Show billing by law firm\"\n\u2022 \"Top flagged invoice lines by amount\"\n\nFor **explanations**, try:\n\u2022 \"What are compliance flags?\"\n\u2022 \"Explain write-down calculations\"\n\nWhat would you like to know?";
+
+  return "I can help answer questions about youth brand data.\n\nFor **data visualizations**, try:\n\u2022 \"Show brand favorability by generation\"\n\u2022 \"Top brands by purchase intent\"\n\nFor **explanations**, try:\n\u2022 \"What is YScore+?\"\n\u2022 \"Explain brand favorability metrics\"\n\nWhat would you like to know?";
 }
 
 export default function ChatBot() {
@@ -126,7 +126,7 @@ export default function ChatBot() {
       setMessages([{
         id: 'welcome',
         type: 'bot',
-        content: "Hello! I'm your Legal Decoder Analytics assistant. \u2696\uFE0F\n\nTry asking:\n\u2022 \"Show me total billing by law firm\"\n\u2022 \"What are the top flagged invoices?\"\n\u2022 \"Show potential write-downs\"",
+        content: "Hello! I'm your YPulse Analytics assistant. \u2728\n\nTry asking:\n\u2022 \"Show brand favorability by generation\"\n\u2022 \"Which brands are trending with Gen Z?\"\n\u2022 \"Show purchase intent over time\"",
         timestamp: new Date(),
       }]);
     }
@@ -272,8 +272,8 @@ export default function ChatBot() {
         <div className="chatbot-panel">
           <div className="chatbot-header">
             <div className="chatbot-title">
-              <Scale size={18} />
-              <span>Legal Analytics Assistant</span>
+              <Sparkles size={18} />
+              <span>YPulse Analytics Assistant</span>
             </div>
             <div className="chatbot-actions">
               <button className="chatbot-action-btn" onClick={handleMinimize} aria-label="Minimize">
@@ -337,7 +337,7 @@ export default function ChatBot() {
               type="text"
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value)}
-              placeholder="Ask about your legal spend data..."
+              placeholder="Ask about youth brand data..."
               disabled={isLoading}
               className="chatbot-input"
             />
@@ -355,7 +355,7 @@ export default function ChatBot() {
       <button 
         className={`chatbot-fab ${isOpen && !isMinimized ? 'active' : ''}`}
         onClick={handleToggle}
-        aria-label="Open Legal Analytics Assistant"
+        aria-label="Open YPulse Analytics Assistant"
       >
         {isOpen && !isMinimized ? (
           <X size={24} />
