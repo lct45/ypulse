@@ -21,7 +21,7 @@ export function initThoughtSpot() {
             "AI Highlights": "YPulse Highlights",
           }
         },
-        iconSpriteUrl: "https://cdn.jsdelivr.net/gh/lct45/ypulse@main/public/yp-sprite.svg",
+        iconSpriteUrl: "https://gist.githubusercontent.com/lct45/4b267c794044e566f18be200a4ae0e0f/raw/yp-sprite.svg",
         style: {
           customCSS: {
             rules_UNSTABLE: {
