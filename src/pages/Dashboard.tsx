@@ -14,7 +14,7 @@ export default function Dashboard() {
           width: '100%',
           height: '100%',
         },
-        liveboardId: '4114a628-d19c-49d8-bf4f-df39ca951df7',
+        liveboardId: '97f5fbe4-d77c-494a-8d14-3bc9485be705',
         activeTabId: '95915dc3-57be-4283-ac19-41e9ef3ad444',
         hideLiveboardHeader: false,
         showLiveboardTitle: true,
