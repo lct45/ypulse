@@ -5,7 +5,7 @@ let isInitialized = false;
 export function initThoughtSpot() {
   if (!isInitialized) {
     init({
-      thoughtSpotHost: 'https://ypulse.thoughtspot.cloud',
+      thoughtSpotHost: 'https://team2.thoughtspot.cloud/#/develop/securitySettings',
       authType: AuthType.None,
       customizations: {
         content: {
