@@ -21,7 +21,7 @@ export function initThoughtSpot() {
             "AI Highlights": "YPulse Highlights",
           }
         },
-        iconSpriteUrl: "https://ypulse.vercel.app/yp-sprite.svg",
+        iconSpriteUrl: "https://cdn.jsdelivr.net/gh/lct45/ypulse@main/public/yp-sprite.svg",
         style: {
           customCSS: {
             rules_UNSTABLE: {
