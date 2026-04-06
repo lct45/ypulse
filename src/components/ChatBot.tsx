@@ -118,7 +118,7 @@ export default function ChatBot() {
   const chatMessagesRef = useRef<HTMLDivElement>(null);
 
   const { sendMessage } = useSpotterAgent({
-    worksheetId: 'e94d24f4-a2ad-48b2-ab43-b83549c43017',
+    worksheetId: '038ee009-a824-427b-807d-a9bbfba70a45',
   });
 
   useEffect(() => {
