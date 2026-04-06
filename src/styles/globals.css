@@ -3,8 +3,8 @@
   --ld-accent: #4F46E5;
   --ld-accent-hover: #4338CA;
   --ld-accent-light: #EEF2FF;
-  --ld-dark: #2D1B69;
-  --ld-dark-deep: #1B0F45;
+  --ld-dark: #4B1060;
+  --ld-dark-deep: #2E0939;
   --ld-white: #ffffff;
   --ld-gray-50: #F5F6F8;
   --ld-gray-100: #f1f5f9;
@@ -500,7 +500,7 @@ body {
   padding: 96px 200px 96px 71px;
   min-height: 458px;
   background:
-    linear-gradient(to right, rgba(45, 27, 105, 0.85) 0%, rgba(45, 27, 105, 0.6) 50%, rgba(45, 27, 105, 0.4) 100%),
+    linear-gradient(to right, rgba(75, 16, 96, 0.85) 0%, rgba(75, 16, 96, 0.6) 50%, rgba(75, 16, 96, 0.4) 100%),
     url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2070&auto=format&fit=crop');
   background-size: cover;
   background-position: center 40%;

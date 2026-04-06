@@ -14,7 +14,7 @@ export default function Spotter() {
           width: '100%',
           height: '100%',
         },
-        worksheetId: 'e94d24f4-a2ad-48b2-ab43-b83549c43017',
+        worksheetId: '038ee009-a824-427b-807d-a9bbfba70a45',
         updatedSpotterChatPrompt: true,
         customizations: {
           style: {

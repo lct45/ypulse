@@ -42,10 +42,10 @@ export default function Dashboard() {
                   fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important"
                 },
                 ".chip-base-module__chip.chip-base-module__filter.chip-base-module__trigger.chip-base-module__default:hover": {
-                  backgroundColor: "#2D1B69 !important",
-                  borderColor: "#2D1B69 !important",
+                  backgroundColor: "#4B1060 !important",
+                  borderColor: "#4B1060 !important",
                   color: "#ffffff !important",
-                  boxShadow: "0 2px 8px rgba(45, 27, 105, 0.3) !important"
+                  boxShadow: "0 2px 8px rgba(75, 16, 96, 0.3) !important"
                 },
                 ".chip-base-module__chip.chip-base-module__filter.chip-base-module__trigger.chip-base-module__default:hover .chip-base-module__chipText": {
                   color: "#ffffff !important"
@@ -57,24 +57,24 @@ export default function Dashboard() {
                   color: "#ffffff !important"
                 },
                 ".chip-base-module__chip.chip-base-module__filter:hover": {
-                  backgroundColor: "#2D1B69 !important",
-                  borderColor: "#2D1B69 !important",
+                  backgroundColor: "#4B1060 !important",
+                  borderColor: "#4B1060 !important",
                   color: "#ffffff !important"
                 },
                 ".chip-base-module__chip.chip-base-module__filter:hover span": {
                   color: "#ffffff !important"
                 },
                 ".filter-panel-module__filterChip.chip-base-module__chip:hover": {
-                  backgroundColor: "#2D1B69 !important",
-                  borderColor: "#2D1B69 !important",
+                  backgroundColor: "#4B1060 !important",
+                  borderColor: "#4B1060 !important",
                   color: "#ffffff !important"
                 },
                 ".filter-panel-module__filterChip.chip-base-module__chip:hover span": {
                   color: "#ffffff !important"
                 },
                 "[data-testid='filter-panel-chip']:hover": {
-                  backgroundColor: "#2D1B69 !important",
-                  borderColor: "#2D1B69 !important",
+                  backgroundColor: "#4B1060 !important",
+                  borderColor: "#4B1060 !important",
                   color: "#ffffff !important"
                 },
                 "[data-testid='filter-panel-chip']:hover span": {
