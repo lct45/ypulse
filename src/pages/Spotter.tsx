@@ -1,6 +1,5 @@
 import { useEffect, useRef } from 'react';
 import { SpotterEmbed } from '@thoughtspot/visual-embed-sdk';
-import Header from '../components/Header';
 import '../lib/thoughtspot';
 
 export default function Spotter() {
@@ -46,10 +45,6 @@ export default function Spotter() {
 
   return (
     <>
-      <Header
-        title="AI Analytics"
-        subtitle="Natural language search powered by YPulse AI"
-      />
       <main className="main-content">
         <div className="page-container">
           <div className="page-header">

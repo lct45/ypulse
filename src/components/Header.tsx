@@ -1,11 +1,12 @@
-import { Bell, HelpCircle, Settings } from 'lucide-react';
+import { Bell, HelpCircle, Settings, Menu } from 'lucide-react';
 
 interface HeaderProps {
   title: string;
   subtitle?: string;
+  onMenuOpen: () => void;
 }
 
-export default function Header({ title, subtitle }: HeaderProps) {
+export default function Header({ title, subtitle, onMenuOpen }: HeaderProps) {
   return (
     <header className="header">
       <div className="header-left">
@@ -27,6 +28,9 @@ export default function Header({ title, subtitle }: HeaderProps) {
         </button>
         <button className="header-action" aria-label="Settings">
           <Settings size={20} />
+        </button>
+        <button className="header-action" aria-label="Menu" onClick={onMenuOpen}>
+          <Menu size={20} />
         </button>
       </div>
     </header>

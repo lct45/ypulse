@@ -6,14 +6,7 @@ export default function Home() {
 
   return (
     <div className="home-page-new">
-      <header className="home-header">
-        <h1 className="home-header-title">YPulse Analytics Portal</h1>
-        <div className="home-header-actions">
-          <div className="header-icon-placeholder"></div>
-          <div className="header-icon-placeholder"></div>
-          <div className="header-icon-placeholder"></div>
-        </div>
-      </header>
+
 
       <section className="home-hero">
         <div className="home-hero-content">

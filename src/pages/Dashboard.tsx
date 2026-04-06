@@ -1,6 +1,5 @@
 import { useEffect, useRef } from 'react';
 import { LiveboardEmbed } from '@thoughtspot/visual-embed-sdk';
-import Header from '../components/Header';
 import '../lib/thoughtspot';
 
 export default function Dashboard() {
@@ -136,10 +135,6 @@ export default function Dashboard() {
 
   return (
     <>
-      <Header
-        title="Brand Dashboard"
-        subtitle="Brand performance tracking among young consumers"
-      />
       <main className="main-content">
         <div className="page-container">
           <div className="page-header">
