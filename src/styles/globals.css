@@ -1141,14 +1141,8 @@ body {
 .nav-drawer-logo-mark {
   width: 36px;
   height: 36px;
-  background: var(--ld-accent);
-  color: var(--ld-white);
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 800;
-  font-size: 14px;
+  border-radius: 6px;
+  object-fit: contain;
   flex-shrink: 0;
   letter-spacing: -0.5px;
 }
@@ -1166,7 +1160,7 @@ body {
 
 .nav-drawer-logo-subtitle {
   font-size: var(--ld-caption-size);
-  color: var(--ld-accent);
+  color: var(--ld-white);
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
@@ -1227,9 +1221,9 @@ body {
 }
 
 .nav-drawer-item.active {
-  background: var(--ld-accent);
+  background: rgba(255, 255, 255, 0.15);
   color: var(--ld-white);
-  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.4);
+  box-shadow: none;
 }
 
 /* Home page menu button */

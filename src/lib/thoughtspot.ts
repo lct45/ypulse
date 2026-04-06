@@ -18,9 +18,10 @@ export function initThoughtSpot() {
             "Powered by ThoughtSpot": "",
             "Preview data": "Preview data",
             "What do you want to know?": "What would you like to explore?",
+            "AI Highlights": "YPulse Highlights",
           }
         },
-        iconSpriteUrl: "/yp-icon.svg",
+        iconSpriteUrl: "https://ypulse.vercel.app/yp-sprite.svg",
         style: {
           customCSS: {
             rules_UNSTABLE: {

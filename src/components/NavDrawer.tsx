@@ -15,7 +15,7 @@ export default function NavDrawer({ isOpen, onClose }: NavDrawerProps) {
       <aside className={`nav-drawer ${isOpen ? 'open' : ''}`}>
         <div className="nav-drawer-header">
           <div className="nav-drawer-logo">
-            <div className="nav-drawer-logo-mark">YP</div>
+            <img src="/yp-icon.png" alt="YPulse" className="nav-drawer-logo-mark" />
             <div className="nav-drawer-logo-text">
               <span className="nav-drawer-logo-title">YPulse</span>
               <span className="nav-drawer-logo-subtitle">Brand Intelligence</span>

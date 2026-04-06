@@ -18,6 +18,11 @@ export default function Spotter() {
         customizations: {
           style: {
             customCSS: {
+              variables: {
+                "--ts-var-button--primary-background": "#4B1060",
+                "--ts-var-button--primary--hover-background": "#2E0939",
+                "--ts-var-application-color": "#4B1060",
+              },
               rules_UNSTABLE: {
                 ".footer-module__footerLogo": {
                   display: "none !important"

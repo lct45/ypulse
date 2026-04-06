@@ -26,6 +26,18 @@ export default function Dashboard() {
                 "--ts-var-root-background": "transparent",
                 "--ts-var-viz-background": "#ffffff",
                 "--ts-var-root-font-family": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+                "--ts-var-application-color": "#4B1060",
+                "--ts-var-button--primary-background": "#4B1060",
+                "--ts-var-button--primary--hover-background": "#2E0939",
+                "--ts-var-button--secondary-background": "#ffffff",
+                "--ts-var-button--secondary--hover-background": "#f3e8f7",
+                "--ts-var-button--secondary-background": "#ffffff",
+                "--ts-var-button--secondary--hover-background": "#f3e8f7",
+                "--ts-var-chip-border-color": "#4B1060",
+                "--ts-var-chip-background": "#4B1060",
+                "--ts-var-chip-color": "#ffffff",
+                "--ts-var-link-color": "#4B1060",
+                "--ts-var-segment-selected-background": "#4B1060",
               },
               rules_UNSTABLE: {
                 ".footer-module__footerLogo": {
@@ -117,6 +129,21 @@ export default function Dashboard() {
                 },
                 ".react-grid-item": {
                   border: "none !important"
+                },
+                // Active liveboard tab text and underline
+                ".pinboard-tab-module__tabHighlightOnSelected": {
+                  color: "#4B1060 !important",
+                },
+                ".pinboard-tab-module__tabSelected": {
+                  borderBottom: "2px solid #4B1060 !important",
+                },
+                ".pinboard-tab-module__tabSelected::after": {
+                  backgroundColor: "#4B1060 !important",
+                  background: "#4B1060 !important",
+                  borderColor: "#4B1060 !important",
+                },
+                ".pinboard-tab-module__tabContainer:hover .pinboard-tab-module__tabHighlightOnSelected": {
+                  color: "#4B1060 !important",
                 }
               },
             },
