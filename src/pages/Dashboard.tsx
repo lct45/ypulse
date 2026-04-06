@@ -31,13 +31,6 @@ export default function Dashboard() {
                 "--ts-var-button--primary--hover-background": "#2E0939",
                 "--ts-var-button--secondary-background": "#ffffff",
                 "--ts-var-button--secondary--hover-background": "#f3e8f7",
-                "--ts-var-button--secondary-background": "#ffffff",
-                "--ts-var-button--secondary--hover-background": "#f3e8f7",
-                "--ts-var-chip-border-color": "#4B1060",
-                "--ts-var-chip-background": "#4B1060",
-                "--ts-var-chip-color": "#ffffff",
-                "--ts-var-link-color": "#4B1060",
-                "--ts-var-segment-selected-background": "#4B1060",
               },
               rules_UNSTABLE: {
                 ".footer-module__footerLogo": {
